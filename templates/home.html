@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block news %}
+    <h1> Another block! </h1>
+{% endblock %}
+{% block content %}
+<h1> Welcome to home page!!!</h1>
+<p>
+Hello, dear {{ username }}! Your code is {{ code }}!
+</p>
+    <p>
+    <ul>
+    {% for product in products %}
+    <li>
+    {% if product != 'paste' %}
+    {{ product }}
+    {% else %}
+         You ordered paste!
+        {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+    </p>
+<h2> Nice to see you. </h2>
+{% endblock %}
