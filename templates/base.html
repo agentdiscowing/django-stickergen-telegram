@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>stickergen</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href={% static "css/site.css" %}>
 </head>
 <body>
 {% include "navbar.html" %}
+<div class="content">
 {% block content %}
 {%  endblock %}
-{% block news %}
-{% endblock %}
+</div>
 </body>
 </html>

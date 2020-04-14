@@ -1,8 +1,14 @@
+
 <nav>
-    <table>
-    <th>
-        <td><a href="https://www.google.com/"> Home page </a></td>
-         <td><a href ="https://www.google.com/"> Index </a></td>
-    </th>
-</table>
+    <ul id='navbar'>
+        <li>
+            <a href= {% url 'home' %}> home </a>
+        </li>
+        <li>
+            <a href = {% url 'stats' %}> statistics </a>
+        </li>
+        <li>
+            <a href = {% url 'faq' %}> faq </a>
+        </li>
+</ul>
 </nav>

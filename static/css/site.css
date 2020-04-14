@@ -1,0 +1,44 @@
+* {
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+body{
+    width: 80%;
+    margin: 0 10%;
+}
+p{
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    font-weight: 700;
+    color:black;
+}
+a:visited{
+    color:black;
+}
+ul#navbar li {
+    display: inline-block;
+    font-size: 30px;
+    color:black;
+    margin: 2% 5%;
+}
+ul#navbar{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+ul#navbar:hover{
+    background-color: black;
+}
+ul#navbar:hover a{
+    color:white;
+}
+.content {
+    margin: 5% 15%;
+}
+.content span{
+    font-weight: bold;
+    font-style: italic;
+}
