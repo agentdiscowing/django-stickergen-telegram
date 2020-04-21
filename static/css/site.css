@@ -2,13 +2,11 @@
     font-family: proxima-nova, sans-serif;
     font-style: normal;
     font-weight: 300;
+    font-size: 20px;
 }
 body{
     width: 80%;
     margin: 0 10%;
-}
-p{
-    font-size: 20px;
 }
 a{
     text-decoration: none;
@@ -38,7 +36,22 @@ ul#navbar:hover a{
 .content {
     margin: 5% 15%;
 }
-.content span{
-    font-weight: bold;
-    font-style: italic;
+.user-upload-container{
+    text-align: center;
+}
+.base-button {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    font-weight: 800;
+    border: 0;
+    padding: 10px 15px;
+    margin: 4% 6%;
+}
+.base-button:hover{
+    cursor: pointer;
+}
+.base-button:disabled{
+    background-color: lightgrey;
+    cursor: initial;
 }
