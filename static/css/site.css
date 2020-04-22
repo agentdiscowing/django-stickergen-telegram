@@ -1,12 +1,14 @@
 * {
     font-family: proxima-nova, sans-serif;
     font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
+    font-weight: 500;
 }
 body{
     width: 80%;
     margin: 0 10%;
+}
+strong{
+    font-weight: bold;
 }
 a{
     text-decoration: none;
@@ -18,9 +20,9 @@ a:visited{
 }
 ul#navbar li {
     display: inline-block;
-    font-size: 30px;
+    font-size: 190%;
     color:black;
-    margin: 2% 5%;
+    margin: 2% 6%;
 }
 ul#navbar{
     text-align: center;
@@ -35,6 +37,7 @@ ul#navbar:hover a{
 }
 .content {
     margin: 5% 15%;
+    font-size: 20px;
 }
 .user-upload-container{
     text-align: center;
@@ -54,4 +57,8 @@ ul#navbar:hover a{
 .base-button:disabled{
     background-color: lightgrey;
     cursor: initial;
+}
+#prevImage{
+    max-width: 50%;
+    max-length: auto;
 }

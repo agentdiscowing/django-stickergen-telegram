@@ -5,7 +5,7 @@
      hey there!
         </p>
     <p>
-        welcome to the <strong>stickergen</strong> - a web-application which will simplify the way you create stickerpacks for telegram.
+        welcome to <strong>stickergen</strong> - a web-application which will simplify the way you create stickerpacks for telegram.
         you can add cool effects and text to your future sticker without worrying about format and size.
       </p>
     <p>
@@ -15,7 +15,7 @@
     <form>
         <button type="button" class="base-button" onclick="chooseImg()"> CHOOSE </button>
         <button type="submit" class="base-button" id="uploadButton" disabled="disabled"> UPLOAD </button>
-        <input type="file" accept=".png, .jpg, .jpeg, .gif" id="userInput" hidden>
+        <input type="file" accept=".png, .jpg, .jpeg, .gif" id="userInput" onchange="previewImg(this)" hidden>
     </form>
     <img alt="Your preview" id="prevImage" hidden/>
     </div>
