@@ -2,4 +2,4 @@ baby_farrot.png
 __pycache__
 myvenv
 .idea
-db.*
+db.sqlite3

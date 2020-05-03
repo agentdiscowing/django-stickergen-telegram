@@ -24,9 +24,10 @@ class Effect(models.Model):
 class Image(models.Model):
     image = ProcessedImageField(upload_to="userpics",
                                 processors=[ResizeToFill(512, 512)],
-                                format="PNG")
+                                format="PNG",
+                                blank=False)
     thumbnail = ImageSpecField(source='image',
                                processors=[ResizeToFill(100, 100)],
                                format="PNG")
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, blank=True)
     created_on = models.DateField(auto_now_add=True)

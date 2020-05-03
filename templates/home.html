@@ -12,10 +12,10 @@
     let your creativity out - we'll do the rest ;)
     </p>
     <div class="user-upload-container">
-    <form>
+    <form method="post" enctype="multipart/form-data" action="."> {% csrf_token %}
         <button type="button" class="base-button" onclick="chooseImg()"> CHOOSE </button>
-        <button type="submit" class="base-button" id="uploadButton" disabled="disabled"> UPLOAD </button>
-        <input type="file" accept=".png, .jpg, .jpeg, .gif" id="userInput" onchange="previewImg(this)" hidden>
+        <input type="submit" class="base-button" id="uploadButton" disabled="disabled" value="UPLOAD">
+        <input type="file" accept=".png, .jpg, .jpeg, .gif" id="userInput" onchange="previewImg(this)" name="image" hidden>
     </form>
     <img alt="Your preview" id="prevImage" hidden/>
     </div>
