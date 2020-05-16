@@ -26,8 +26,6 @@ class Image(models.Model):
                                 processors=[ResizeToFill(512, 512)],
                                 format="PNG",
                                 blank=False)
-    thumbnail = ImageSpecField(source='image',
-                               processors=[ResizeToFill(100, 100)],
-                               format="PNG")
-    name = models.CharField(max_length=100, blank=True)
+    draft = ImageSpecField(source='image',
+                           format="PNG")
     created_on = models.DateField(auto_now_add=True)
