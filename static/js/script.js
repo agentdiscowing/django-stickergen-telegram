@@ -14,3 +14,9 @@ function previewImg(input){
        reader.readAsDataURL(input.files[0]);
     }
 }
+function ApplyEffect(eff){
+    let chosen_effect = eff.textContent.trim();
+    $('#effect-name-input').val(chosen_effect);
+    $('#AddEffect').click();
+
+}
