@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+<ul class="effect-name">
+{% for effect in effects%}
+    {% if forloop.counter0 < 6 %}
+    <li onclick="ApplyEffect(this)"> {{effect.name}} <br> <img src="{{effect.thumbnail.url}}" alt="Effect Thumbnail"> </li>
+    {% else %}
+    <li onclick="ApplyEffect(this)"> <img src="{{effect.thumbnail.url}}" alt="Effect Thumbnail"> <br> {{effect.name}} </li>
+    {% endif %}
+{% endfor %}
+</ul>
+<img src="{{image.draft.url}}" alt="Future sticker"> <br>
+<a href="{{ image.draft.url }}" download>
+<button class="base-button"> DONE </button>
+</a>
+</div>
+    <form method="get" hidden>
+        <input type="text" name="effect" id="effect-name-input">
+        <input type="number" value="{{image.id}}" name="image_id">
+        <input type="submit" id="AddEffect">
+    </form>
+{% endblock %}

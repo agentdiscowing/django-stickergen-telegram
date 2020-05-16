@@ -12,7 +12,7 @@
     let your creativity out - we'll do the rest ;)
     </p>
     <div class="user-upload-container">
-    <form method="post" enctype="multipart/form-data" action="."> {% csrf_token %}
+    <form method="post" enctype="multipart/form-data" action="{% url 'edit' %}"> {% csrf_token %}
         <button type="button" class="base-button" onclick="chooseImg()"> CHOOSE </button>
         <input type="submit" class="base-button" id="uploadButton" disabled="disabled" value="UPLOAD">
         <input type="file" accept=".png, .jpg, .jpeg, .gif" id="userInput" onchange="previewImg(this)" name="image" hidden>
