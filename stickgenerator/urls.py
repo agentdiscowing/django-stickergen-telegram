@@ -6,6 +6,7 @@ urlpatterns = [
     path('', views.home_view, name='home'),
     path('stats/', views.stats_view, name='stats'),
     path('faq/', views.faq_view, name='faq'),
+    path('edit/', views.edit_view, name='edit')
 ]
 
 # path('index/', views.index, name='index'), # показать вьюшку index_view при переходе на "websitename/index"
