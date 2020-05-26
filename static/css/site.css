@@ -76,3 +76,7 @@ ul#navbar:hover a{
 #effect-name-input{
     text-transform: capitalize;
 }
+#stats-image{
+    height: 100%;
+    width: 110%;
+}

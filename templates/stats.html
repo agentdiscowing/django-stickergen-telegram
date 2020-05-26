@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>stats</title>
-</head>
-<body>
-<p>
-    stats
-</p>
-</body>
-</html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container">
+<img src="{% static "stats.png" %}" id="stats-image" alt="stats">
+    </div>
+{% endblock %}
